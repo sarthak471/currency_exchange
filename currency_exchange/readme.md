@@ -63,7 +63,7 @@ Once the setup is complete, you can run the Django server:
     ```bash
     http://127.0.0.1:8000/mycurrency/currency/backoffice-dashboard/
 ## Additional Information
-- The Postman collection for the API endpoints is available in the task-app directory
+- The Postman collection for the API endpoints is available in the currency_exchange directory
 - If you encounter issues with migrations, check your database configuration in the `settings.py` file and ensure the database server is running.
 - Remember to create new migrations and apply them whenever you make changes to your models.
 
