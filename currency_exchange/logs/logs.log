@@ -1,0 +1,50 @@
+INFO 2024-11-18 06:55:25,654 views 503706 140202991691520 Historical data loading request received.
+INFO 2024-11-18 06:55:26,265 views 503706 140202991691520 Validated data: source_currency=USD, provider_name=mock, exchanged_currency=['EUR', 'GBP', 'CHF'], start_date=2023-01-01, end_date=2023-01-31
+ERROR 2024-11-18 06:55:26,275 views 503706 140202991691520 Error initiating historical data loading: You cannot call this from an async context - use a thread or sync_to_async.
+ERROR 2024-11-18 06:55:26,277 log 503706 140202991691520 Internal Server Error: /mycurrency/provider/load-historical-data
+ERROR 2024-11-18 06:55:26,278 basehttp 503706 140202991691520 "POST /mycurrency/provider/load-historical-data HTTP/1.1" 500 117
+INFO 2024-11-18 06:55:53,213 autoreload 503706 140203067359872 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 06:55:54,012 autoreload 504894 140193541001856 Watching for file changes with StatReloader
+INFO 2024-11-18 13:49:56,545 autoreload 400723 140630557266560 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:49:57,026 autoreload 404971 139743751185024 Watching for file changes with StatReloader
+INFO 2024-11-18 13:50:23,880 autoreload 404971 139743751185024 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:50:24,426 autoreload 405888 139677268648576 Watching for file changes with StatReloader
+INFO 2024-11-18 13:50:27,771 autoreload 405888 139677268648576 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:50:28,238 autoreload 406036 140047784448640 Watching for file changes with StatReloader
+INFO 2024-11-18 13:50:58,351 autoreload 406036 140047784448640 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:50:58,833 autoreload 407030 140560379634304 Watching for file changes with StatReloader
+INFO 2024-11-18 13:51:02,346 views 407030 140560303965952 Historical data loading request received.
+INFO 2024-11-18 13:51:02,895 views 407030 140560303965952 Validated data: source_currency=USD, provider_name=mock, exchanged_currency=['EUR', 'GBP', 'CHF'], start_date=2023-01-01, end_date=2023-01-31
+ERROR 2024-11-18 13:51:02,895 views 407030 140560303965952 Error initiating historical data loading: sync_to_async can only be applied to sync functions.
+ERROR 2024-11-18 13:51:02,897 log 407030 140560303965952 Internal Server Error: /mycurrency/provider/load-historical-data
+ERROR 2024-11-18 13:51:02,898 basehttp 407030 140560303965952 "POST /mycurrency/provider/load-historical-data HTTP/1.1" 500 94
+INFO 2024-11-18 13:52:03,977 autoreload 407030 140560379634304 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:52:04,429 autoreload 409170 140195297583744 Watching for file changes with StatReloader
+INFO 2024-11-18 13:52:06,701 autoreload 409170 140195297583744 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:52:07,065 autoreload 409251 140408848544384 Watching for file changes with StatReloader
+INFO 2024-11-18 13:52:10,658 views 409251 140408772876032 Historical data loading request received.
+INFO 2024-11-18 13:52:11,302 views 409251 140408772876032 Validated data: source_currency=USD, provider_name=mock, exchanged_currency=['EUR', 'GBP', 'CHF'], start_date=2023-01-01, end_date=2023-01-31
+ERROR 2024-11-18 13:52:11,313 views 409251 140408772876032 Error initiating historical data loading: You cannot call this from an async context - use a thread or sync_to_async.
+ERROR 2024-11-18 13:52:11,315 log 409251 140408772876032 Internal Server Error: /mycurrency/provider/load-historical-data
+ERROR 2024-11-18 13:52:11,316 basehttp 409251 140408772876032 "POST /mycurrency/provider/load-historical-data HTTP/1.1" 500 117
+INFO 2024-11-18 13:52:47,482 autoreload 409251 140408848544384 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:52:47,936 autoreload 410635 140094539305600 Watching for file changes with StatReloader
+INFO 2024-11-18 13:54:38,200 autoreload 410635 140094539305600 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 13:54:38,601 autoreload 414331 140386965586560 Watching for file changes with StatReloader
+INFO 2024-11-18 13:54:43,268 views 414331 140386889918208 Historical data loading request received.
+INFO 2024-11-18 13:54:43,941 views 414331 140386889918208 Validated data: source_currency=USD, provider_name=mock, exchanged_currency=['EUR', 'GBP', 'CHF'], start_date=2023-01-01, end_date=2023-01-31
+ERROR 2024-11-18 13:54:43,950 views 414331 140386889918208 Error initiating historical data loading: You cannot call this from an async context - use a thread or sync_to_async.
+ERROR 2024-11-18 13:54:43,953 log 414331 140386889918208 Internal Server Error: /mycurrency/provider/load-historical-data
+ERROR 2024-11-18 13:54:43,955 basehttp 414331 140386889918208 "POST /mycurrency/provider/load-historical-data HTTP/1.1" 500 117
+INFO 2024-11-18 14:04:51,586 autoreload 414331 140386965586560 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 14:04:54,941 autoreload 434672 140405503382144 Watching for file changes with StatReloader
+INFO 2024-11-18 14:05:08,088 autoreload 434672 140405503382144 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 14:05:11,524 autoreload 435147 139937230353024 Watching for file changes with StatReloader
+INFO 2024-11-18 14:05:37,138 autoreload 435147 139937230353024 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 14:05:40,271 autoreload 435999 140177474052736 Watching for file changes with StatReloader
+INFO 2024-11-18 14:05:45,453 autoreload 435999 140177474052736 /home/unthinkable-lap/currency_exchange/provider/views.py changed, reloading.
+INFO 2024-11-18 14:05:49,191 autoreload 436247 140304139186816 Watching for file changes with StatReloader
+INFO 2024-11-18 14:05:52,600 views 436247 140304063518464 Historical data loading request received.
+INFO 2024-11-18 14:05:53,214 views 436247 140304063518464 Validated data: source_currency=USD, provider_name=mock, exchanged_currency=['EUR', 'GBP', 'CHF'], start_date=2023-01-01, end_date=2023-01-31
+INFO 2024-11-18 14:05:53,216 views 436247 140304063518464 Historical data loading task started.
+INFO 2024-11-18 14:05:53,225 basehttp 436247 140304063518464 "POST /mycurrency/provider/load-historical-data HTTP/1.1" 202 46

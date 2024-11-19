@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "d1f171fa-30db-493e-a64c-2bca0f398e11",
+		"name": "CurrencyBeacon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21629216"
+	},
+	"item": [
+		{
+			"name": "Exchange",
+			"item": [
+				{
+					"name": "currency-rates",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"source_currency\":\"USD\",\n    \"exchanged_currency\":\"INR\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/currency-rates?source_currency=USD&provider_name=currency_beacon&start_date=2024-10-20&end_date=2024-10-21",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"currency-rates"
+							],
+							"query": [
+								{
+									"key": "source_currency",
+									"value": "USD"
+								},
+								{
+									"key": "provider_name",
+									"value": "currency_beacon"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-10-20"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-10-21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "convert-amount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/convert-amount/?source_currency=USD&amount=10&exchanged_currency=USD&provider_name=currency_beacon",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"convert-amount",
+								""
+							],
+							"query": [
+								{
+									"key": "source_currency",
+									"value": "USD"
+								},
+								{
+									"key": "amount",
+									"value": "10"
+								},
+								{
+									"key": "exchanged_currency",
+									"value": "USD"
+								},
+								{
+									"key": "provider_name",
+									"value": "currency_beacon"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Currency",
+			"item": [
+				{
+					"name": "health-check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/health",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Currency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/currencies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"currencies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Currency",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"INR\",\n    \"name\": \"Rupee\",\n    \"symbol\": \"₹\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/currencies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"currencies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Currency Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"USD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/currencies/detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"currencies",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Currency",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"USD\",\n    \"name\": \"US Dollar (Updated)\",\n    \"symbol\": \"$\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/currencies/detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"currencies",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/currency/currencies/detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"currency",
+								"currencies",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Provider",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/provider/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"provider",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-priority",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"currency_beacon\",\n    \"priority\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/provider/update-priority",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"provider",
+								"update-priority"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "load-historical-data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"source_currency\": \"USD\",\n    \"provider_name\": \"mock\",\n    \"exchanged_currency\": [\"EUR\", \"GBP\", \"CHF\"],\n    \"start_date\": \"2023-01-01\",\n    \"end_date\": \"2023-01-31\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/mycurrency/provider/load-historical-data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"mycurrency",
+								"provider",
+								"load-historical-data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
